@@ -1,0 +1,7 @@
+Microserviços são um modelo de arquitetura de software que visa dividir as responsabilidades de uma aplicação em serviços independentes, cada um com seu domínio e podendo se comunicar através de APIs.
+Enquanto uma arquitetura de monolito define a construção de um sistema num único bloco, totalmente integrado. Os microserviços dividem a responsabilidade, sendo autônomo, escalável, dividido. E o desenvolvimento/manutenção de cada microserviço, não impacta o todo do sistema, apenas o que está em seu domínio.
+Dessa forma, a arquitetura de microserviços traz inúmeros benefícios para um sistema, dentre esses benefícios podemos citar:
+Escalabilidade independente - se uma area específica requer mais recursos, basta que o microserviço reponsável por aquele domínio escale, e não o sistema completo.
+Flexibilidade - Não há necessidade de utilizar a mesma tecnologia, microserviços diferentes em linguagem e tecnologia podem compor um mesmo sistema.
+Deploy e manutenção - O deploy possui impacto e complexidade menor, visto a possibilidade de fazer o deploy de uma fração do sistema completo, considerando apenas os microserviços necessários para a alteração, e o efeito é o mesmo para manutenção, se há um problema na geração de um relatório, basta que por exemplo, o microserviço responsável por relatórios receba algum ajuste para que todo o sistema volte a funcionar.
+Os microsserviços se comunicam principalmente por comunicação síncrona (HTTP/REST) ou assíncrona (Fila de mensagens, como Kafka ou RabbitMQ), com o uso de mensagens ou APIs para troca de dados.
